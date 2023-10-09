@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Skills Managment</title>
+  </head>
+  <body>
+    <section class="d-flex">
+      <nav class="bg-dark width_nav vh-100">
+        <h3 class="navbar-brand text-white text-center">
+          Arbre des compétences
+        </h3>
+        <ul class="navbar-nav mx-auto text-white">
+          <li class="nav-item active">
+            <i class="fa-solid fa-gauge"></i> Gestion des compétences
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-turn-up"></i> Gestions des niveaux
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-user"></i> Gestions des formateurs
+          </li>
+        </ul>
+      </nav>
+      <!--===========================  table =============================== -->
+<div class="card mx-2 mt-3" id="tableContent">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+      Compétences Managment
+    </h3>
+    <div>
+      <div id="table" class="table-editable">
+        <button class="btn btn-success m-2" id="addButton">Ajouter</button>
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+          <thead>
+            <tr>
+              <th class="text-center">Name</th>
+              <th class="text-center">Code</th>
+              <th class="text-center">Description</th>
+              <th class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C1</td>
+              <td>Maquette</td>
+              <td>Maquetter une application mobile</td>
+             
+              <td>
+                <span class="table-remove"
+                  ><button type="button" class="btn btn-warning btn-rounded btn-sm my-0">
+                    Edit
+                  </button></span
+                  ><button type="button" class="btn btn-danger btn-rounded btn-sm mx-1">
+                    Supprimer
+                    </button></span
+                >
+              </td>
+            </tr>
+            
+            <tr>
+              <td>C2</td>
+              <td>Base Données</td>
+              <td>Manipuler une base de données - perfectionnement		</td>
+              
+              <td>
+                <span class="table-remove"
+                  ><button type="button" class="btn btn-warning btn-rounded btn-sm my-0">
+                    Edit
+                  </button></span
+                  ><button type="button" class="btn btn-danger btn-rounded btn-sm mx-1">
+                    Supprimer
+                    </button></span
+                >
+              </td>
+            </tr>
+            
+            <tr>
+              <td>C3</td>
+              <td>back-end</td>
+              <td>Développer la partie back-end d'une application web ou web mobile - perfectionnement			</td>
+              
+              <td>
+                <span class="table-remove"
+                  ><button type="button" class="btn btn-warning btn-rounded btn-sm my-0">
+                    Edit
+                  </button></span
+                  ><button type="button" class="btn btn-danger btn-rounded btn-sm mx-1">
+                    Supprimer
+                    </button></span
+                >
+              </td>
+            </tr>
+            
+            <tr>
+              <td>C4</td>
+              <td>gestion</td>
+              <td>Collaborer à la gestion d’un projet informatique et à l’organisation de l’environnement de développement - perfectionnement</td>
+             
+              <td>
+                <span class="table-remove"
+                  ><button type="button" class="btn btn-warning btn-rounded btn-sm my-0">
+                    Edit
+                  </button></span
+                  ><button type="button" class="btn btn-danger btn-rounded btn-sm mx-1">
+                      Supprimer
+                    </button></span
+                >
+              </td>
+            </tr>
+             
+             <tr>
+                <td>C5</td>
+                <td>mobile native</td>
+                <td>Développer une application mobile native, avec Android et React Native</td>
+               
+                <td>
+                    <span class="table-remove"
+                      ><button type="button" class="btn btn-warning btn-rounded btn-sm my-0">
+                        Edit
+                      </button></span
+                      ><button type="button" class="btn btn-danger btn-rounded btn-sm mx-1">
+                        Supprimer
+                        </button></span
+                    >
+                  </td>
+              </tr>
+               
+            <tr>
+                <td>C6</td>
+                <td>tests</td>
+                <td>Préparer et exécuter les plans de tests d’une application</td>
+               
+                <td>
+                    <span class="table-remove"
+                      ><button type="button" class="btn btn-warning btn-rounded btn-sm my-0">
+                        Edit
+                      </button></span
+                      ><button type="button" class="btn btn-danger btn-rounded btn-sm mx-1">
+                        Supprimer
+                        </button></span
+                    >
+                  </td>
+              </tr>
+               
+            <tr>
+                <td>C7</td>
+                <td>déploiement</td>
+                <td>Préparer et exécuter le déploiement d’une application web et mobile - perfectionnement</td>
+               
+                <td>
+                  <span class="table-remove"
+                    ><button type="button" class="btn btn-warning btn-rounded btn-sm my-0">
+                      Edit
+                    </button></span
+                    ><button type="button" class="btn btn-danger btn-rounded btn-sm mx-1">
+                        Supprimer
+                      </button></span
+                  >
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <form id="addSkill" class="w-75 hide mx-5 mt-5">
+    <div class="form-group">
+      <label for="text">Nom de Compétence</label>
+      <input type="text" class="form-control" placeholder="Entrez le nom de compétence">
+    </div>
+    <div class="form-group mt-2">
+      <label for="text">Code de Compétence</label>
+      <input type="text" class="form-control" placeholder="Entrez le code de compétence">
+    </div>
+    <div class="form-group mt-2">
+        <label for="text">Description de Compétence</label>
+        <textarea name="Description" class="form-control" id="" cols="30" rows="2"></textarea>
+      </div>
+  
+    <button type="submit" class="btn btn-success mt-2" id="addSkillConfirm">Ajoutez compétence</button>
+  </form>
+
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ad59909c53.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
