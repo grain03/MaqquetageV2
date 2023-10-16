@@ -1,0 +1,116 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+  body{
+    margin: 0px;
+    height: 0px;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+
+.maindashboard{
+    width: 100%;
+    display: flex;
+}
+
+.left_bar{
+    width: 30%;
+    background-color: rgb(135, 118, 230);
+    height: 100vh;
+    position: relative;
+}
+
+.left_bar .logo{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo img{
+    width: 110px;
+    height: 110px;
+    border-radius: 999px;
+}
+
+
+
+.left_bar .actions{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+
+
+.actions ul{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.actions ul li{
+font-size: 1em;
+font-weight: 400;
+padding: 10px;
+margin: 8px;
+background: rgba(255, 255, 0, 0.509);
+border-radius: 5px;
+transition: 0.7s;
+cursor: pointer;
+}
+
+.actions ul li:hover{
+    background: rgb(174, 174, 59);
+}
+
+
+.maindashboard .main_bar{
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+}
+
+.main_bar .navbar{
+    background-color: #fff;
+    padding: 15px 25px;
+    border-bottom: 1px solid #c8c8c8;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    background: rgb(135 118 230);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.table table{
+    width: 100%;
+    background-color: #fff;
+}
+
+.table th {
+    /* border: 1px solid #000000; */
+    padding: 10px;
+}
+.table :where(tr, td) {
+    padding: 10px;
+}
+
+.table tr:nth-child(even) {
+    background:rgb(224, 218, 255);
+}
+
+
+
