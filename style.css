@@ -1,4 +1,41 @@
-.table {
-    width: 80%;
+/* .main_bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .main_bar table{
+    min-width: 75%;
     float: right;
+} */
+
+/* .main-sidebar{
+    position: static !important;
+    width: 22%;
+    min-height: 100vh !important;
+} */
+
+/* .navbar {
+    margin-left: 0px !important;
+} */
+
+
+/* .sidebar-collapse .main-sidebar{ 
+margin-left: -300px;
+} */
+
+
+/* .content-header {
+    padding: 15px 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} */
+
+/* .card{
+    width: 100%;
 }
+
+.card-header{
+    border-radius: 0px;
+} */
